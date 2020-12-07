@@ -28,3 +28,18 @@ var age ="38";
 var template="I'm "+ age +" years old";
 
 console.log(template);
+
+// Bonus
+
+// 09- Substring
+
+var str = "Clown"
+console.log(str.substring(0,2));
+
+// 10-échappement
+var poeme = 'Dans orange\nIl y a or\nOr il n\’y a pas d\’or\nDans l\’orange\nC\’est orange une orange\nL\’or est dans la bouche';
+console.log(poeme);
+
+// 11- 
+var changed = "Bonjour" ;
+console.log(changed.replaceAll('o', 'a'));//je ne trouve pas le problème
