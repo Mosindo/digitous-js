@@ -20,4 +20,11 @@ console.log(basic);
 console.log(basicUp);
 console.log(basicDown);
 // 07- Split
+var Word = "banana";
+var letters = Word.split('');
+console.log(letters);
 // 08- Template
+var age ="38";
+var template="I'm "+ age +" years old";
+
+console.log(template);
