@@ -117,7 +117,11 @@ switch (month) {
 }
 
 // 01- Bonus III
-var roundedNumber = 3.6; //3.6 - 4= -0,4; 3 et 4 -[0,1]>= -0,5;  4
+var roundedNumber = 3.6; 
+//3.6 - 4= -0,4; 
+//3 (a)et 4 (b)-[0;1]
+// a < b (a-b) >=-0,5(Math.ceil) ou ,5(Math.floor) ;  
+//4
 
 
 if(roundedNumber - Math.ceil(roundedNumber) >= -0.5){
