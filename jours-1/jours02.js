@@ -117,6 +117,16 @@ switch (month) {
 }
 
 // 01- Bonus III
+var roundedNumber = 3.6; //3.6 - 4= -0,4; 3 et 4 -[0,1]>= -0,5;  4
+
+
+if(roundedNumber - Math.ceil(roundedNumber) >= -0.5){
+    console.log(Math.ceil(roundedNumber))
+}
+else{
+    console.log(Math.floor(roundedNumber))
+}
+
 // 01- Bonus IV
 
 //A la fin rajouté des commentaire à mes exercices pour avoir des notes ecrite de mes résolution de problème.
