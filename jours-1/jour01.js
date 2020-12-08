@@ -25,7 +25,7 @@ var letters = Word.split('');
 console.log(letters);
 // 08- Template
 var age ="38";
-var template="I'm "+ age +" years old";
+var template = `I'm ${age} years old` ;
 
 console.log(template);
 
@@ -42,4 +42,4 @@ console.log(poeme);
 
 // 11- 
 var changed = "Bonjour" ;
-console.log(changed.replaceAll('o', 'a'));//je ne trouve pas le problème
+console.log(changed.replace(/o/g, 'a'));//je ne trouve pas le problème
