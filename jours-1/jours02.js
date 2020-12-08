@@ -63,10 +63,59 @@ if (condition) {
 }
 */
 // 07- Condition II
-var 
+var password = "azerty";
+
+if( password.length > 5){
+    console.log("The password is secure");
+}
+/*else {
+    console.log("your code is too short ...");
+}*/;
+
 // 08- Condition III
+
+
+if( password.length > 5 && score >= limit ){//&& ("ET")
+    console.log("Everything is good");
+}
+else if(password.length || 5 && score >= limit ){//|| ("OU")
+console.log( "Something is good" );}
+else{
+    console.log( "Nothing is good")
+}
 // 09- Bonus 
+var random = Math.random();
+
+console.log(random);//La fonction Math.random() renvoie un nombre flottant pseudo-aléatoire compris dans l'intervalle [0, 1].
 // 10- Bonus II
+var month = "January";//Les blocs switch servent à exécuter du code en fonction de la valeur de quelque chose :
+var month= "November"
+switch (month) {
+    case "December": 
+    break; 
+	case "January": 
+	case "February": 
+		console.log("Winter");
+        break;
+    case "March":      
+    case "April": 
+	case "May":  
+		console.log("Spring");
+        break; 
+    case "June": 
+    case "July":   
+    case "August": 
+    console.log("Summer");
+    break; 
+    case "September": 
+    case "Octcber":   
+    case "November": 
+    console.log("Winter is coming");
+        break; 
+	default: 
+		console.log("That's not a season...");
+}
+
 // 01- Bonus III
 // 01- Bonus IV
 
