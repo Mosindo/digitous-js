@@ -78,15 +78,20 @@ if( password.length > 5){
 if( password.length > 5 && score >= limit ){//&& ("ET")
     console.log("Everything is good");
 }
-else if(password.length || 5 && score >= limit ){//|| ("OU")
+else if(password.length > 5 ||  score >= limit ){//|| ("OU")
 console.log( "Something is good" );}
 else{
     console.log( "Nothing is good")
 }
+
 // 09- Bonus 
-var random = Math.random();
+var random = Math.random();// nombre entre 0 et 1
+var max= 6;
+var min =1;
+var random = Math.floor(Math.random()*(max-min + 1 )+ min)//number between 2 number
 
 console.log(random);//La fonction Math.random() renvoie un nombre flottant pseudo-aléatoire compris dans l'intervalle [0, 1].
+
 // 10- Bonus II
 var month = "January";//Les blocs switch servent à exécuter du code en fonction de la valeur de quelque chose :
 var month= "November"
