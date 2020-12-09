@@ -35,7 +35,18 @@ console.log(number)
 // 05- Boucle 
  var total = 0;
  var limit = 10;
- for(var i=0; i<= 10; i++){
-     console.log(i);
+ for(var i=0; i<= limit; i++){
+    total+=i;
+    console.log(i)
  }
-console.log(total =+i );
+console.log(total)
+console.log("exo 6")
+// 06-Reverse"
+var sentence = "Hello Konexio !";
+var inverse = "";
+for(var i=sentence.length - 1; i>= 0; i--){
+   console.log(i)
+   inverse += sentence.charAt(i);
+}
+
+console.log("resultat:" + inverse );
