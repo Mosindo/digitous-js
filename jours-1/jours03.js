@@ -23,5 +23,19 @@ console.log(objects)//La méthode pop() supprime le dernier élément d'un table
 objects.push("laptop");
 console.log(objects);//La méthode push() ajoute un ou plusieurs éléments à la fin d'un tableau et retourne la nouvelle taille du tableau.
 objects.shift()
-console.log(objects)
-// 0
+console.log(objects)//La méthode shift() permet de retirer le premier élément d'un tableau et de renvoyer cet élément. Cette méthode modifie la longueur du tableau.
+
+// 04- Order 
+var number = [4,10,8,12,6]
+number.reverse();
+console.log(number);
+number.sort((a, b) => a - b);// est-une formule pour avoir le tableau dans l'odre croissant != number.sort((a, b) => b - a) là le resultat sera décroissant;
+console.log(number)
+
+// 05- Boucle 
+ var total = 0;
+ var limit = 10;
+ for(var i=0; i<= 10; i++){
+     console.log(i);
+ }
+console.log(total =+i );
