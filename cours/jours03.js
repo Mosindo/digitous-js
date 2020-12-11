@@ -59,6 +59,7 @@ while (sentence<inverse) {
 }
 
 console.log("bonus I"+inverse)
+
 // Bonus
 var limite = 100;
 
