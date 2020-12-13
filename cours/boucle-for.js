@@ -47,4 +47,19 @@ for( var i = 0 ; i<=20 ;++i){
 /*### 04 - Des boites
 
 A l'aide d'un papier et crayon, devinez ce qu'affiche le code suivant (interdit d'executer le code !)*/
+// Réponse :
+//box1 = 51;
+// box2 = 98;
+// i = 13;
+
+// ### 05 - Des setiob
+// Réponse :
+//box1 = 42;
+// i = 3;
+
+//### 06 - Encore des boites
+// Réponse :
+//box1 = 3;
+//box2 = 6;
+// i =  3 ;
 
