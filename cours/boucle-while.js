@@ -5,7 +5,6 @@ var start = 50;
 var finish =200;
 
 while(start <= finish){
-    console.log(start)
     start += 2;
 }
 
@@ -20,9 +19,13 @@ var min = 1;
 var max = 6;
 var dice = 0;
 var resultat= 0;
+var count= 0;
 
 while(dice !== 6){
      dice =  Math.floor(Math.random() * max + min );
+     var count= count +1;
+     console.log( dice);
+     console.log(count)
 
 }
 
@@ -41,3 +44,24 @@ while(promo.length !== 0 ){
     console.log(promo)
     
 }
+
+//03 - Course
+var ussainBolt = 0;
+var tysonGay = 0 ;
+var distance1= Math.floor(Math.random() * 10+1);
+var distance2= Math.floor(Math.random() * 10+1);
+
+while( ussainBolt  <=100 && tysonGay <=100){
+    console.log("usain bolt :"+ ussainBolt)
+    console.log("tyson gay :"+  tysonGay)
+    ussainBolt += distance1;
+    tysonGay += distance2;
+}
+
+//04 - Des boites
+//Réponse :
+// box1=2
+//box2=5
+
+//05 - Des boites
+// boucle infini car une fois le décompte enclenché i sera toujours supérieur à 0;
