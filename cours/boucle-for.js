@@ -22,9 +22,7 @@ for(var i = 100 ; i<= 1000; ++i){
    if(i % 7 === 0  ){
        sept += 1;
    }
-   else{
-
-   }
+   
 }
 console.log(sept)*/
 
@@ -33,24 +31,24 @@ console.log(sept)*/
 Lancez un dé 20 fois et affichez la somme de tout les résultats plus grand ou égale à 5
 var max = 6;
 var min = 1;
-
-for( var i = 0 ; i<=20 ;++i){
+var sum= 0;
+for( var i = 0 ; i<20 ;++i){
     var dice = Math.floor(Math.random() * (max - min + 1)) + min;
     if( dice >= 5){
+        sum+= dice;
         console.log(dice);
     }
-    else{
 
-    }
-} */
+} 
+console.log(sum)*/
 
 /*### 04 - Des boites
 
 A l'aide d'un papier et crayon, devinez ce qu'affiche le code suivant (interdit d'executer le code !)*/
 // Réponse :
-//box1 = 51;
-// box2 = 98;
-// i = 13;
+//box1 = 17;
+// box2 = 30;
+// i = 14;
 
 // ### 05 - Des setiob
 // Réponse :
