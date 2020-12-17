@@ -46,7 +46,41 @@ countEach("xxoooo")
 - La fonction retourne "Palindrome !" si le mot se lit dans les deux sens, sinon elle retourne "Nope"
 - Vérifiez que vous obtenez un positif avec l'argument "racecar" mais pas avec "laptop"*/
 function checkPal(string3){
-    var mot =string3.split();
-    var motInverser=string3.reverse().join("")
-    console.log()
+    var mot =string3.split("");
+    var motInverser=mot.reverse().join("");
+    console.log(string3)
+    console.log( mot);
+    console.log(motInverser);
+    if (string3 === motInverser){
+        console.log("Mais petit génie , Tu as trouvé un palindrome !")
+    }
+    else{
+        console.log("Cherche encore ")
+    }
 }
+
+checkPal("ressasser");
+
+
+/* 04 - Swap
+
+- Créez une fonction `swap` qui reçoit une string en paramètre
+- La fonction retourne une string avec la casse inverse : une majuscule deviendra minuscule et vice-versa
+- Appelez votre fonction avec l'argument "Hello World" et vérifiez que vous obtenez "hELLO wORLD"*/
+
+function Swap(string4){
+    var words= [];
+    for(i = 0;i < string4.length; i++){
+        if (string4[i]== string4[i].toLowerCase()){
+            words.push(string4[i].toUpperCase());
+        }
+        else{
+            words.push( string4[i].toLowerCase());
+        }
+    }
+
+    console.log( words.join(""));
+
+};
+
+Swap("AZErrrr")
