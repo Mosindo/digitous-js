@@ -68,10 +68,27 @@ checkPal("ressasser");
 - La fonction retourne une string avec la casse inverse : une majuscule deviendra minuscule et vice-versa
 - Appelez votre fonction avec l'argument "Hello World" et vérifiez que vous obtenez "hELLO wORLD"*/
 
-function Swap(string4){
-    var words= [];
+function swap(string4){
+    var words="" ;
     for(i = 0;i < string4.length; i++){
-        if (string4[i]== string4[i].toLowerCase()){
+        if (string4.charAt(i)===string4.charAt(i).toLowerCase()){
+            words.push(string4.charAt(i).toUpperCase());
+        }
+        else{
+            words.push( string4.charAt(i).toLowerCase());
+        }
+    }
+
+    console.log( words);
+
+};
+// second solution
+swap("Sans Tableau");
+
+function swap(string4){
+    var words=[] ;
+    for(i = 0;i < string4.length; i++){
+        if (string4[i]=== string4[i].toLowerCase()){
             words.push(string4[i].toUpperCase());
         }
         else{
@@ -83,4 +100,24 @@ function Swap(string4){
 
 };
 
-Swap("AZErrrr")
+swap("Avec TABleau");
+/* Bonus I
+- Créez une fonction `makeItSpongeBob` qui reçoit une string en paramètre
+- La fonction retourne une string avec le même texte en alternant majuscule / minuscule
+- Appelez votre fonction avec l'argument "Javascript is easy" et vérifiez le résultat
+ */
+
+ function makeItSpongeBob(string5){
+    var words1 = "" ;
+    for(var i = 0;i < string5.length; i++){
+        if (i%2 === 0){
+            words1+=string5.charAt(i).toUpperCase();
+        }
+        else{
+            words1+=string5.charAt(i).toLowerCase();
+        }
+    }
+    console.log (words1);
+ }
+
+ makeItSpongeBob("Javascript is easy")
