@@ -4,7 +4,7 @@
 - La fonction retourne une string avec les mêmes lettres, dans l'ordre alphabétique
 - Ne pas utilisez la méthode .sort()
 - Appelez votre fonction avec "konexio" comme argument et vérifiez que vous obtenez "eiknoox" */
-
+console.log("01 -  Alphabet")
 function sortLetters(string){
     var letter =string.split("");
     return letter.sort().join("");
@@ -16,7 +16,7 @@ console.log(sortLetters("bamboo"));
 - Créez une fonction `countEach` qui reçoit une string contenant des x et des o en paramètre
 - La fonction retourne true si il y a autant de x que de o, sinon elle retourne false
 - Vérifiez que l'argument "xxxoooox" déclenche un true, et que "xox" déclenche un false */
-
+console.log("02 - XOXO")
 function countEach(string2){
     var words = string2;
     var x=0;
@@ -45,6 +45,7 @@ countEach("xxoooo")
 - Créez une fonction `checkPal` qui reçoit une string en paramètre
 - La fonction retourne "Palindrome !" si le mot se lit dans les deux sens, sinon elle retourne "Nope"
 - Vérifiez que vous obtenez un positif avec l'argument "racecar" mais pas avec "laptop"*/
+console.log("03 - Palindrome")
 function checkPal(string3){
     var mot =string3.split("");
     var motInverser=mot.reverse().join("");
@@ -67,7 +68,7 @@ checkPal("ressasser");
 - Créez une fonction `swap` qui reçoit une string en paramètre
 - La fonction retourne une string avec la casse inverse : une majuscule deviendra minuscule et vice-versa
 - Appelez votre fonction avec l'argument "Hello World" et vérifiez que vous obtenez "hELLO wORLD"*/
-
+console.log("04 - Swap")
 function swap(string4){
     var words="" ;
     for(i = 0;i < string4.length; i++){
@@ -82,7 +83,7 @@ function swap(string4){
     console.log( words);
 
 };
-// second solution
+console.log("second solution")
 swap("Sans Tableau");
 
 function swap(string4){
@@ -106,7 +107,7 @@ swap("Avec TABleau");
 - La fonction retourne une string avec le même texte en alternant majuscule / minuscule
 - Appelez votre fonction avec l'argument "Javascript is easy" et vérifiez le résultat
  */
-
+console.log("Bonus I")
  function makeItSpongeBob(string5){
     var words1 = "" ;
     for(var i = 0;i < string5.length; i++){
@@ -121,3 +122,51 @@ swap("Avec TABleau");
  }
 
  makeItSpongeBob("Javascript is easy")
+
+ /* Bonus II
+
+- tester votre exercice 1 avec un mélange de lettres majuscules et minuscules. Est ce que cela fonctionne toujours ?
+- si non corrigez le ! */
+console.log("Bonus II")
+
+function sortLetters(string){
+     var letter =string.split("");
+    return letter.sort((a,b)=>{
+        a = a.toLowerCase();
+        b = b.toLowerCase();
+        if(a<b){return - 1}
+        if(a>b){return  1}
+        if(a===b){return 0}
+    }).join("");
+}
+
+console.log(sortLetters("BaMbOo"));
+/*⭐ Bonus III
+
+- Que retourne votre fonction de l'exercice 2 si vous lui passez autre chose que des x ou des o ?
+- Rajoutez un message d'erreur explicite dans ce cas. */
+console.log("⭐ Bonus III")
+function countEach(string2){
+    var words = string2;
+    var x=0;
+    var o = 0;
+    for(i = 0;i < words.length; i++){
+        if (words.charAt(i)=== "x"){
+            x++;
+        }
+        else if(words.charAt(i)=== "o"){
+            o++;
+        }
+    }
+    if (string2.include("x")!== true && string2.include("o") !== true){
+        console.log("Non! o ou x");
+    }
+    else if (o === x){
+        console.log("répartion parfaite");
+    }
+    else{
+        console.log("répartion imparfaite"); 
+    }
+}
+
+countEach("xxoooo")
