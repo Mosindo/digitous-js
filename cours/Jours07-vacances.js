@@ -158,8 +158,12 @@ function countEach(string2){
             o++;
         }
     }
-    if (string2.include("x")!== true && string2.include("o") !== true){
-        console.log("Non! o ou x");
+    
+   /* if (string2.includes("x")!= true && string2.includes("o") != true){
+        console.log("Non! o ou x prise en charge");
+    }*/
+    if( o === 0  && x === 0){
+        console.log("no")
     }
     else if (o === x){
         console.log("répartion parfaite");
@@ -169,4 +173,4 @@ function countEach(string2){
     }
 }
 
-countEach("xxoooo")
+countEach("xxo")
