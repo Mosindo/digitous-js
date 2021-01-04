@@ -81,7 +81,64 @@ nav ul li{
 .ligne{
     border-bottom: solid 1px #E5E5E5;
     width: 100%;
+    margin: 20px;
    
 }
 
+#sub-nav{
+    width: 100%;
+    display: inline;
+    justify-content: center;
+}
+.search{
+    width: 50%;
+    height: 50px;
+    background-color: #F2F2F2;
+}
+i{
+    color: #333333;
+    font-size: 26px;
+}
 
+input{
+margin: 0px;
+font-family:'Lucida Grande',sans-serif;
+border-style: none;
+
+}
+
+button{
+    width: 10%;
+    height: 50px;
+    margin: 0px;
+    font-weight: bold;
+    color: white;
+    background-color:#231F20 ;
+    border-style:none;
+}
+/*main*/
+main{
+    height: 845px;
+    width: 100%;
+    background-image:url(./../img/ck3uwvv67mydydr74ea00ip4j-bg-stripes.png);
+    background-position: center;
+}
+
+h2{
+    color: white;
+    font-weight: 600;
+    font-size: 5rem;
+}
+.blanc{
+    background-color: white;
+    height: 628px;
+}
+.blanc h2{
+    color: black;
+    font-size: 28px;
+}
+/* Boxes*/
+.red{
+    height: 88px;
+    background-color: red;
+}
